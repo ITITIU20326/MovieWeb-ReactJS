@@ -5,7 +5,7 @@ import { useState } from "react";
 import {Routes, Route, redirect } from "react-router-dom"
 import DetailMovie from "./component/DetailMovie/DetailMovie";
 import DetailPeople from "./component/DetailPeople/DetailPeople";
-import Login from "./component/Login";
+import Login from "./component/Login/Login";
 import Private from "./component/Private";
 import PopularPeople from "./component/Popular People/PopularPeople";
 function App() {

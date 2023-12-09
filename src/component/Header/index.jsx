@@ -6,17 +6,13 @@ import "./style.css"
 function Navigation() {
   let navigate = useNavigate()
   let handleLogout = () => {
-    // localStorage.removeItem("accessToken")
-    // navigate("/login")
+    localStorage.removeItem("accessToken")
+    navigate("/login")
   }
   let handleLogin = () => {
-    // localStorage.setItem("accessToken", true)
-    // navigate("/login")
+    localStorage.setItem("accessToken", true)
+    navigate("/login")
   }
-  let handlePrivate = () => {
-    
-  }
-
   return (
     <div className='container'>
         <div className="navleft">
@@ -25,13 +21,10 @@ function Navigation() {
           <p>TV Shows</p>
           <p><Link to={"/people"} style={{color: "white"}}>People</Link></p>
           <p>More</p>
-          {/* <p><Button onClick={handlePrivate}>Private</Button></p> */}
-          {/* <p><Link to={"/private"}>Private</Link></p> */}
         </div>
         <div className="navright">
-          <p><Button>Login</Button></p>
-          <p><Button onClick={handleLogout}>Logout</Button></p>
-          <p><Link to="/search" ><SearchOutlined /></Link></p>
+          <p><Button onClick={handleLogin}>Log In</Button></p>
+          <p><Button onClick={handleLogout}>Sign Up</Button></p>
         </div>
     </div>
   )

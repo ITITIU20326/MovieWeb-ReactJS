@@ -7,6 +7,7 @@ p{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    /* background-color: #031d33;  */
 }
 .container .navleft{
     display: flex;

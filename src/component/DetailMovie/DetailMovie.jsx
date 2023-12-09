@@ -145,9 +145,9 @@ function DetailMovie() {
                       </Col>
                       <Col span={5} style={{marginLeft: 15, marginTop: 37}}>
                         <Row justify={"left"} style={{marginBottom: 15}}>
-                          <Col className='col-icon'><FacebookOutlined /></Col>
-                          <Col className='col-icon'><TwitterOutlined /></Col>
-                          <Col className='col-icon'><InstagramOutlined /></Col>
+                          <div className="background-booking">
+                            <button className='booking'>Booking Now</button>
+                          </div>
                         </Row>
                         <Row>
                           <Col>

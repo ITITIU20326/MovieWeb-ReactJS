@@ -3,7 +3,7 @@ const footerItems = [
         title: "THE BASICS",
         children: [
             {
-                item: "Giới thiệu về TMDB"
+                item: "Introduce of TMDB"
             }, 
             {
                 item: "Contact Us"
